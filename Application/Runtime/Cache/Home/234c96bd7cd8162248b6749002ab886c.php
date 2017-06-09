@@ -5,12 +5,12 @@
 	<meta name="description" content="" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="Shortcut Icon" href="/unot/Public/images/favicon.ico">
-	<link rel="Bookmark" href="/unot/Public/images/favicon.ico">
-	<link rel="stylesheet" href="/unot/Public/dev/styles/personal@dev.css">
+	<link rel="Shortcut Icon" href="<?php echo Home_PUC;?>/images/favicon.ico">
+	<link rel="Bookmark" href="<?php echo Home_PUC;?>/images/favicon.ico">
+	<link rel="stylesheet" href="<?php echo Home_PUC;?>/dev/styles/personal@dev.css">
 	
-	<link href="/unot/Public/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="/unot/Public/css/froala_editor.min.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo Home_PUC;?>/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo Home_PUC;?>/css/froala_editor.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div class="common-logo visible-xs-block">
@@ -43,7 +43,7 @@
 				<article>
 					<div class="personal-box row">
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 headimg">
-							<img src="/unot/Public/images/Unot.png" alt="Unot.one" class="img-circle">
+							<img src="<?php echo Home_PUC;?>/images/Unot.png" alt="Unot.one" class="img-circle">
 						</div>
 						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 							<p class="text-left username">用户名：<span>xxx</span></p>
@@ -140,7 +140,7 @@
 			<div class="tm-right-inner-container editor row">
 				<section id="editor">
 					<div id='edit' style="margin-top: 30px;">
-					    <img class="fr-fir" src="/unot/Public/img/old_clock.jpg" alt="Old Clock" width="300"/>
+					    <img class="fr-fir" src="<?php echo Home_PUC;?>/img/old_clock.jpg" alt="Old Clock" width="300"/>
 
 					    <h1>Click and edit</h1>
 
@@ -158,20 +158,20 @@
 		</div>
 		<!-- right section end-->
 	</div>
-	<script src="/unot/Public/dev/scripts/personal@dev.js"></script>
-	<script src="/unot/Public/js/libs/jquery-1.11.1.min.js"></script>
-	<script src="/unot/Public/js/froala_editor.min.js"></script>
+	<script src="<?php echo Home_PUC;?>/dev/scripts/personal@dev.js"></script>
+	<script src="<?php echo Home_PUC;?>/js/libs/jquery-1.11.1.min.js"></script>
+	<script src="<?php echo Home_PUC;?>/js/froala_editor.min.js"></script>
 	<!--[if lt IE 9]>
-	<script src="/unot/Public/js/froala_editor_ie8.min.js"></script>
+	<script src="<?php echo Home_PUC;?>/js/froala_editor_ie8.min.js"></script>
 	<![endif]-->
-	<script src="/unot/Public/js/plugins/tables.min.js"></script>
-	<script src="/unot/Public/js/plugins/lists.min.js"></script>
-	<script src="/unot/Public/js/plugins/colors.min.js"></script>
-	<script src="/unot/Public/js/plugins/media_manager.min.js"></script>
-	<script src="/unot/Public/js/plugins/font_family.min.js"></script>
-	<script src="/unot/Public/js/plugins/font_size.min.js"></script>
-	<script src="/unot/Public/js/plugins/block_styles.min.js"></script>
-	<script src="/unot/Public/js/plugins/video.min.js"></script>
+	<script src="<?php echo Home_PUC;?>/js/plugins/tables.min.js"></script>
+	<script src="<?php echo Home_PUC;?>/js/plugins/lists.min.js"></script>
+	<script src="<?php echo Home_PUC;?>/js/plugins/colors.min.js"></script>
+	<script src="<?php echo Home_PUC;?>/js/plugins/media_manager.min.js"></script>
+	<script src="<?php echo Home_PUC;?>/js/plugins/font_family.min.js"></script>
+	<script src="<?php echo Home_PUC;?>/js/plugins/font_size.min.js"></script>
+	<script src="<?php echo Home_PUC;?>/js/plugins/block_styles.min.js"></script>
+	<script src="<?php echo Home_PUC;?>/js/plugins/video.min.js"></script>
 
 	<script>
 	  $(function(){

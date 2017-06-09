@@ -8,16 +8,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!--Basic Styles-->
-    <link href="/unot/Public/style/bootstrap.css" rel="stylesheet">
-    <link href="/unot/Public/style/font-awesome.css" rel="stylesheet">
-    <link href="/unot/Public/style/weather-icons.css" rel="stylesheet">
+    <link href="<?php echo ADMIN_PUC;?>/style/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo ADMIN_PUC;?>/style/font-awesome.css" rel="stylesheet">
+    <link href="<?php echo ADMIN_PUC;?>/style/weather-icons.css" rel="stylesheet">
 
     <!--Beyond styles-->
-    <link id="beyond-link" href="/unot/Public/style/beyond.css" rel="stylesheet" type="text/css">
-    <link href="/unot/Public/style/demo.css" rel="stylesheet">
-    <link href="/unot/Public/style/typicons.css" rel="stylesheet">
-    <link href="/unot/Public/style/animate.css" rel="stylesheet">
-    <link href="/unot/Public/style/page.css" rel="stylesheet">
+    <link id="beyond-link" href="<?php echo ADMIN_PUC;?>/style/beyond.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo ADMIN_PUC;?>/style/demo.css" rel="stylesheet">
+    <link href="<?php echo ADMIN_PUC;?>/style/typicons.css" rel="stylesheet">
+    <link href="<?php echo ADMIN_PUC;?>/style/animate.css" rel="stylesheet">
+    <link href="<?php echo ADMIN_PUC;?>/style/page.css" rel="stylesheet">
 
 
     <link href='https://www.hanyi.studio/WebFonts/C3DB971E-443B-4D37-887D-530EE441EB6B/201705/css/ADAB1E56D69B0F14.css' rel='stylesheet' type='text/css'/>
@@ -33,7 +33,7 @@
             <div class="navbar-header pull-left">
                 <a href="#" class="navbar-brand">
                     <small>
-                        <img src="/unot/Public/images/logo.png" alt="">
+                        <img src="<?php echo ADMIN_PUC;?>/images/logo.png" alt="">
                     </small>
                 </a>
             </div>
@@ -50,7 +50,7 @@
                         <li>
                             <a class="login-area dropdown-toggle" data-toggle="dropdown">
                                 <div class="avatar" title="View your public profile">
-                                    <img src="/unot/Public/images/Unot.png">
+                                    <img src="<?php echo ADMIN_PUC;?>/images/Unot.png">
                                 </div>
                                 <section>
                                     <h2><span class="profile"><span>Unot</span></span></h2>
@@ -235,11 +235,11 @@
 	</div>
 
 	    <!--Basic Scripts-->
-    <script src="/unot/Public/style/jquery_002.js"></script>
-    <script src="/unot/Public/style/bootstrap.js"></script>
-    <script src="/unot/Public/style/jquery.js"></script>
+    <script src="<?php echo ADMIN_PUC;?>/style/jquery_002.js"></script>
+    <script src="<?php echo ADMIN_PUC;?>/style/bootstrap.js"></script>
+    <script src="<?php echo ADMIN_PUC;?>/style/jquery.js"></script>
     <!--Beyond Scripts-->
-    <script src="/unot/Public/style/beyond.js"></script>
+    <script src="<?php echo ADMIN_PUC;?>/style/beyond.js"></script>
     
 
 

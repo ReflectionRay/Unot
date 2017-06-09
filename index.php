@@ -20,6 +20,8 @@ define('APP_DEBUG',True);
 // 定义应用目录
 define('APP_PATH','./Application/');
 
+define('Home_PUC','http://127.0.0.1/Unot/Application/Home/Public');
+define('ADMIN_PUC','http://127.0.0.1/Unot/Application/Admin/Public');
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';
 

@@ -5,9 +5,9 @@
 	<meta name="description" content="" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="Shortcut Icon" href="/unot/Public/images/favicon.ico">
-	<link rel="Bookmark" href="/unot/Public/images/favicon.ico">
-	<link rel="stylesheet" href="/unot/Public/dev/styles/sign@dev.css">
+	<link rel="Shortcut Icon" href="<?php echo Home_PUC;?>/images/favicon.ico">
+	<link rel="Bookmark" href="<?php echo Home_PUC;?>/images/favicon.ico">
+	<link rel="stylesheet" href="<?php echo Home_PUC;?>/dev/styles/sign@dev.css">
 </head>
 <body>
 	<div class="common-logo visible-xs-block">
@@ -116,6 +116,6 @@
 		</div>
 		<!-- right section end-->
 	</div>
-	<script src="/unot/Public/dev/scripts/sign@dev.js"></script>
+	<script src="<?php echo Home_PUC;?>/dev/scripts/sign@dev.js"></script>
 </body>
 </html>

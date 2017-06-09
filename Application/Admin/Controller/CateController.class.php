@@ -43,8 +43,10 @@ class CateController extends Controller {
     }
     public function del($id){
         $cate=D('cate');
-        if($cate->delete()){
-            $this->success('删除成功',U());
+        if($cate->delete($id)){
+            $this->success('删除成功',U('lst'));
+        }else{
+            $this->error('删除失败');
         }
     }
 }

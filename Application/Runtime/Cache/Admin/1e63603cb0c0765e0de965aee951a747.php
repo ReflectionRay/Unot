@@ -8,15 +8,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!--Basic Styles-->
-    <link href="/unot/Public/style/bootstrap.css" rel="stylesheet">
-    <link href="/unot/Public/style/font-awesome.css" rel="stylesheet">
-    <link href="/unot/Public/style/weather-icons.css" rel="stylesheet">
+    <link href="<?php echo ADMIN_PUC;?>/style/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo ADMIN_PUC;?>/style/font-awesome.css" rel="stylesheet">
+    <link href="<?php echo ADMIN_PUC;?>/style/weather-icons.css" rel="stylesheet">
 
     <!--Beyond styles-->
-    <link id="beyond-link" href="/unot/Public/style/beyond.css" rel="stylesheet" type="text/css">
-    <link href="/unot/Public/style/demo.css" rel="stylesheet">
-    <link href="/unot/Public/style/typicons.css" rel="stylesheet">
-    <link href="/unot/Public/style/animate.css" rel="stylesheet">
+    <link id="beyond-link" href="<?php echo ADMIN_PUC;?>/style/beyond.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo ADMIN_PUC;?>/style/demo.css" rel="stylesheet">
+    <link href="<?php echo ADMIN_PUC;?>/style/typicons.css" rel="stylesheet">
+    <link href="<?php echo ADMIN_PUC;?>/style/animate.css" rel="stylesheet">
     
 </head>
 <body>
@@ -29,7 +29,7 @@
             <div class="navbar-header pull-left">
                 <a href="#" class="navbar-brand">
                     <small>
-                        <img src="/unot/Public/images/logo.png" alt="">
+                        <img src="<?php echo ADMIN_PUC;?>/images/logo.png" alt="">
                     </small>
                 </a>
             </div>
@@ -46,7 +46,7 @@
                         <li>
                             <a class="login-area dropdown-toggle" data-toggle="dropdown">
                                 <div class="avatar" title="View your public profile">
-                                    <img src="/unot/Public/images/Unot.png">
+                                    <img src="<?php echo ADMIN_PUC;?>/images/Unot.png">
                                 </div>
                                 <section>
                                     <h2><span class="profile"><span>Unot</span></span></h2>
@@ -101,7 +101,7 @@
                 <i class="menu-icon fa fa-gear"></i>
 
                 <span class="menu-text">
-                                栏目管理                            </span>
+                                基础管理                            </span>
 
                 <i class="menu-expand"></i>
             </a>
@@ -109,7 +109,14 @@
                 <li>
                     <a href="/unot/index.php/Admin/cate/lst">
                                     <span class="menu-text">
-                                        类型管理                                    </span>
+                                        栏目类型管理                                    </span>
+                        <i class="menu-expand"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/unot/index.php/Admin/article/lst">
+                                    <span class="menu-text">
+                                        文章管理                                    </span>
                         <i class="menu-expand"></i>
                     </a>
                 </li>
@@ -186,7 +193,7 @@
                         <div class="form-group">
                             <label for="username" class="col-sm-2 control-label no-padding-right">文章类型</label>
                             <div class="col-sm-6">
-                                <input class="form-control" id="catename" placeholder="" name="catename"  type="text">
+                                <input class="form-control" id="catename" placeholder="" name="catename" required="" type="text">
                             </div>
                             <p class="help-block col-sm-4 red">* 必填</p>
                         </div>
@@ -219,11 +226,11 @@
 	</div>
 
 	    <!--Basic Scripts-->
-    <script src="/unot/Public/style/jquery_002.js"></script>
-    <script src="/unot/Public/style/bootstrap.js"></script>
-    <script src="/unot/Public/style/jquery.js"></script>
+    <script src="<?php echo ADMIN_PUC;?>/style/jquery_002.js"></script>
+    <script src="<?php echo ADMIN_PUC;?>/style/bootstrap.js"></script>
+    <script src="<?php echo ADMIN_PUC;?>/style/jquery.js"></script>
     <!--Beyond Scripts-->
-    <script src="/unot/Public/style/beyond.js"></script>
+    <script src="<?php echo ADMIN_PUC;?>/style/beyond.js"></script>
     
 
 

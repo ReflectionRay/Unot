@@ -8,16 +8,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!--Basic Styles-->
-    <link href="__PUBLIC__/style/bootstrap.css" rel="stylesheet">
-    <link href="__PUBLIC__/style/font-awesome.css" rel="stylesheet">
-    <link href="__PUBLIC__/style/weather-icons.css" rel="stylesheet">
+    <link href="<?php echo ADMIN_PUC;?>/style/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo ADMIN_PUC;?>/style/font-awesome.css" rel="stylesheet">
+    <link href="<?php echo ADMIN_PUC;?>/style/weather-icons.css" rel="stylesheet">
 
     <!--Beyond styles-->
-    <link id="beyond-link" href="__PUBLIC__/style/beyond.css" rel="stylesheet" type="text/css">
-    <link href="__PUBLIC__/style/demo.css" rel="stylesheet">
-    <link href="__PUBLIC__/style/typicons.css" rel="stylesheet">
-    <link href="__PUBLIC__/style/animate.css" rel="stylesheet">
-    
+    <link id="beyond-link" href="<?php echo ADMIN_PUC;?>/style/beyond.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo ADMIN_PUC;?>/style/demo.css" rel="stylesheet">
+    <link href="<?php echo ADMIN_PUC;?>/style/typicons.css" rel="stylesheet">
+    <link href="<?php echo ADMIN_PUC;?>/style/animate.css" rel="stylesheet">
+
 </head>
 <body>
 	<!-- 头部 -->
@@ -39,9 +39,9 @@
                         <a href="__MODULE__/Index/lst">后台管理系统</a>
                     </li>
                                         <li>
-                        <a href="__CONTROLLER__/lst">栏目管理</a>
+                        <a href="__CONTROLLER__/lst">文章管理</a>
                     </li>
-                                        <li class="active">添加栏目</li>
+                                        <li class="active">添加文章</li>
                                         </ul>
                 </div>
                 <!-- /Page Breadcrumb -->
@@ -53,26 +53,41 @@
     <div class="col-lg-12 col-sm-12 col-xs-12">
         <div class="widget">
             <div class="widget-header bordered-bottom bordered-blue">
-                <span class="widget-caption">新增栏目</span>
+                <span class="widget-caption">新增文章</span>
             </div>
             <div class="widget-body">
                 <div id="horizontal-form">
                     <form class="form-horizontal" role="form" action="" method="post">
                         <div class="form-group">
-                            <label for="username" class="col-sm-2 control-label no-padding-right">文章类型</label>
+                            <label for="username" class="col-sm-2 control-label no-padding-right">文章标题</label>
                             <div class="col-sm-6">
-                                <input class="form-control" id="catename" placeholder="" name="catename" required="" type="text">
+                                <input class="form-control" id="" placeholder="" name="art_title" required=""  type="text"/>
                             </div>
                             <p class="help-block col-sm-4 red">* 必填</p>
                         </div>
                         <div class="form-group">
-                            <label for="group_id" class="col-sm-2 control-label no-padding-right">是否开放</label>
+                            <label for="username" class="col-sm-2 control-label no-padding-right">作者</label>
                             <div class="col-sm-6">
-                                <select name="open" style="width: 100%;">
-                                    <option value="0" >开放</option>
-                                    <option value="1" >私密</option>
+                                <input class="form-control" id="" placeholder="" name="art_people" required=""  type="text"/>
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="group_id" class="col-sm-2 control-label no-padding-right">所属类型</label>
+                            <div class="col-sm-6">
+                                <select name="art_cate" style="width: 100%;">
+                                    <volist name="cates" id="vo">
+                                    <option value="{$vo.id}" >{$vo.catename}</option>
+                                    </volist>
                                 </select>
                             </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">文章内容</label>
+                            <div class="col-sm-6">
+                                <textarea id="content" name="art_content" ></textarea>
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
@@ -94,12 +109,18 @@
 	</div>
 
 	    <!--Basic Scripts-->
-    <script src="__PUBLIC__/style/jquery_002.js"></script>
-    <script src="__PUBLIC__/style/bootstrap.js"></script>
-    <script src="__PUBLIC__/style/jquery.js"></script>
+    <script src="<?php echo ADMIN_PUC;?>/style/jquery_002.js"></script>
+    <script src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+    <script src="__PUBLIC__/ueditor/ueditor.all.min.js"></script>
+    <script src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script src="<?php echo ADMIN_PUC;?>/style/bootstrap.js"></script>
+    <script src="<?php echo ADMIN_PUC;?>/style/jquery.js"></script>
     <!--Beyond Scripts-->
-    <script src="__PUBLIC__/style/beyond.js"></script>
-    
+    <script src="<?php echo ADMIN_PUC;?>/style/beyond.js"></script>
 
-
+    <script type="text/javascript">
+        //实例化编辑器
+        //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+        UE.getEditor('content',{initialFrameWidth:800 ,initialFrameHeight:400,});
+    </script>
 </body></html>
