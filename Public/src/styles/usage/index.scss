@@ -1,0 +1,18 @@
+
+.collect{
+	display: block;
+	cursor: pointer;
+	a{
+		display:inline-block;
+		margin-left: 20px;
+	}
+}
+.collect-active{
+	color: red;
+}
+.Article-Detail{
+	display:none;
+}
+small{
+	padding-left: 20px;
+}

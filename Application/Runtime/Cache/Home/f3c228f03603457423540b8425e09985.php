@@ -1,0 +1,121 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<head>
+	<title>Unot</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="Shortcut Icon" href="/unot/Public/images/favicon.ico">
+	<link rel="Bookmark" href="/unot/Public/images/favicon.ico">
+	<link rel="stylesheet" href="/unot/Public/dev/styles/sign@dev.css">
+</head>
+<body>
+	<div class="common-logo visible-xs-block">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 black-bg logo-left-container">
+			<h1 class="logo-left">Unot</h1>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 white-bg logo-right-container">
+			<h1 class="logo-right">One</h1>
+		</div>			
+	</div>
+	<div class="common-container">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 black-bg left-container">
+			<h1 class="logo-left hidden-xs margin-bottom-60">Unot</h1>
+			<div class="tm-left-inner-container">
+				<ul class="nav nav-stacked common-nav">
+				  <li><a href="/unot/index.php/Home/Index/index"><i class="iconfont icon-yonghu"></i>Home</a></li>
+				  <li><a href="/unot/index.php/Home/Sign/index"><i class="iconfont icon-denglu"></i>Sign Up</a></li>
+				  <li><a href="/unot/index.php/Home/Personal/index"><i class="iconfont icon-gerenxinxi"></i>Personal</a></li>
+				  <li><a href="/unot/index.php/Home/Contact/index"><i class="iconfont icon-lianxi"></i>Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- left section end-->
+		
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 white-bg right-container">
+			<h1 class="logo-right hidden-xs margin-bottom-60">One</h1>		
+			<div class="tm-right-inner-container">
+				<h1 class="common-header">
+					<a class="active-sign">登录</a>
+					<i> | </i>
+					<a>注册</a>
+				</h1>
+				<!-- 登录 -->
+				<form class="login">
+					<!-- 帐号 -->
+					<div class="form-group">
+						<label for="inputEmail1">Email address</label>
+						<input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+						<div class="alert alert-danger alert-dismissible">
+							<button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+							<strong></strong> 
+						</div>
+					</div>
+					
+					<!-- 密码 -->
+					<div class="form-group">
+						<label for="inputPassword1">Password</label>
+						<input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+						<div class="alert alert-danger alert-dismissible">
+							<button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+							<strong></strong>
+						</div>
+					</div>
+					
+					<!-- 登录 -->
+					<div class="btn btn-default" id="login">登录</div>
+					<!-- 登录错误提示 -->
+					<div class="alert alert-danger alert-dismissible tip-login">
+						<button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+						<strong></strong>
+					</div>
+				</form>
+				<!-- 注册 -->
+				<form class="sign">
+					<div class="form-group">
+						<label for="inputEmail2">Email address</label>
+						<input type="email" class="form-control" id="inputEmail2" placeholder="Email">
+						<div class="alert alert-danger alert-dismissible">
+							<button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+							<strong></strong> 
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputPassword2">Password</label>
+						<input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+						<div class="alert alert-danger alert-dismissible">
+							<button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+							<strong></strong>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputPassword3">Repeate Password</label>
+						<input type="password" class="form-control" id="inputPassword3" placeholder="Repeate Password">
+						<div class="alert alert-danger alert-dismissible">
+							<button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+							<strong></strong>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="validateCode">Validate Code</label>
+						<input type="text" class="form-control" id="validateCode" placeholder="Validate Code">
+						<div class="alert alert-danger alert-dismissible">
+							<button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+							<strong></strong>
+						</div>
+				        <span id="idcode"></span>
+				        <span class="reCode"><a>看不清，再来一张</a></span>
+
+					</div>
+					
+					<div class="btn btn-default" id="register">注册</div>
+				</form>
+				<footer>
+				</footer>
+			</div>	
+		</div>
+		<!-- right section end-->
+	</div>
+	<script src="/unot/Public/dev/scripts/sign@dev.js"></script>
+</body>
+</html>
